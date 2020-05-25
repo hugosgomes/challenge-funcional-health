@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" href="{{secure_asset('images/favicon.ico')}}" type="image/x-icon">
-        <link rel="stylesheet" href="{{secure_asset('css/style.css')}}">
+        <link rel="shortcut icon" href="{{asset('images/favicon.ico')}}" type="image/x-icon">
+        <link rel="stylesheet" href="{{asset('css/style.css')}}">
         <script src="https://kit.fontawesome.com/2e314a729a.js" crossorigin="anonymous"></script>
         <title>Challenge Funcional Health Tech</title>
     </head>
@@ -12,7 +12,7 @@
         <div class="container">
             <div class="first-content">
                 <div class="logo line">
-                    <img src="{{secure_asset('images/logo.png')}}" alt="">
+                    <img src="{{asset('images/logo.png')}}" alt="">
                 </div>
                 <div class="line">
                     <div class="input-text">
@@ -36,7 +36,7 @@
             </div>
             <div class="second-content">
                 <div class="logo line">
-                    <img src="{{secure_asset('images/logo.png')}}" alt="">
+                    <img src="{{asset('images/logo.png')}}" alt="">
                 </div>
                 <div class="line">
                     <div class="input-text money">
@@ -56,6 +56,6 @@
             integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
             crossorigin="anonymous">
         </script>
-        <script src="{{secure_asset('js/script.js')}}"></script>
+        <script src="{{asset('js/script.js')}}"></script>
     </body>
 </html>
