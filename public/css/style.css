@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body * {
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --primary: #83C930;
+    --secondary: #ffffff;
+    --text-black: #000000;
+    --text-gray: #A3A3A3;
+    --background-gray: #e5e5e5;
+    --width-default: 185px;
+    --height-default: 53px;
+}
+
+.container {
+    height: 100vh;
+    background-color: var(--background-gray);
+    display: flex;
+    justify-content: center;
+}
+
+.first-content, .second-content {
+    display: flex;
+    width: 800px;
+    height: 400px;
+    margin: 100px auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary);
+    border-radius: 10px;
+}
+
+.line {
+    width: 100%;
+    height: 77px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 27px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.logo {
+    height: 71px;
+}
+
+.input-text {
+    width: var(--width-default);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 13.5px;
+    background-color: var(--secondary);
+}
+
+.input-text label {
+    font-weight: bold;
+    width: 100%;
+    font-size: 12px;
+}
+
+.label-error {
+    font-weight: bold;
+    font-size: 12px;
+    color: red;
+    width: 100%;
+    height: 17px;
+    display: none;
+}
+
+.block-error {
+    width: 100%;
+    height: 17px;
+    display: none;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-text input {
+    width: var(--width-default);
+    height: var(--height-default);
+    color: var(--text-black);
+    border-radius: 10px;
+    border: 1px solid var(--text-gray);
+    box-sizing: border-box;
+    padding: 9px;
+    font-size: 24px;
+
+}
+
+.input-text input::-webkit-outer-spin-button,
+.input-text input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.btn-primary {
+    width: 185px;
+    height: 53px;
+    background: var(--primary);
+    border-radius: 10px;
+    border: 1px solid var(--primary);
+    margin: 0px 13.5px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--secondary);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-primary:hover, .btn-round:hover {
+    background: var(--secondary);
+    color: var(--primary);
+}
+
+.btn-round {
+    width: 53px;
+    height: 53px;
+    background: var(--primary);
+    border-radius: 50%;
+    border: 1px solid var(--primary);
+    margin: 0px 13.5px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 16px;
+    color: var(--secondary);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.second-content {
+    display: none;
+}
+
+.break {
+    width: 100%;
+}
